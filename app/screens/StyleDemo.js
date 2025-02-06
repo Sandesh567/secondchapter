@@ -1,5 +1,6 @@
 import React from "react"
-import { View } from "react-native"
+import { Text, View } from "react-native"
+import AppText from "../components/AppText"
 
 export default function StyleDemo() {
     return (
@@ -19,8 +20,8 @@ export default function StyleDemo() {
                 // borderTopWidth: 20,
                 // borderTopLeftRadius: 50,
              }}>
-            </View> */}
-            <View style={{
+             */}
+            {/* <View style={{
                 backgroundColor: "dodgerblue",
                 width: 100,
                 height: 100,
@@ -30,9 +31,34 @@ export default function StyleDemo() {
                 shadowRadius: 10,
                 elevation: 30
 
+            }}> */}
+            <Text style={{
+                fontSize: 30,
+                // fontFamily:"Roboto"
+                fontStyle: "italic",
+                fontWeight: '600',
+                color: "red",
+                textTransform: "capitalize",
+                textDecorationLine: 'line-through',
             }}>
+                I love react native
+            </Text>
+            <Text style={{
+                fontSize: 30,
+                // fontFamily:"Roboto"
+                fontStyle: "italic",
+                fontWeight: '600',
+                color: "red",
+                textTransform: "capitalize",
+                textAlign: 'center',
+                lineHeight: 40
+            }}>
+                My first react app learning styling
+            </Text>
+            {/* Making sure text looks the same making custom text component*/}
 
-            </View>
+            <AppText>This is text using custom text component</AppText>
+
 
         </View>
     )
@@ -49,5 +75,10 @@ export default function StyleDemo() {
     for Android:
     Lack of shadow control in android
     elevation: 30
+
+*/
+/*
+paading is inside
+margin in outside
 
 */
